@@ -1,9 +1,7 @@
-
-__version__ = "0.1"
+__version__ = "0.1.1"
 __license__ = "BSD License"
 __author__ = "Jeremy Carbaugh <jeremy@200ok.net>"
 
-import random
 import unittest
 
 ROMAN_NUMERALS = (
@@ -87,11 +85,10 @@ class TestCaseConversions(unittest.TestCase):
         """
         Test encoding and decoding of random integers to roman numerals.
         """
-        for i in range(1, 10000):
-            x = random.randint(1, 3000)
-            encoded = encode(x)
+        for i in range(1, 3000):
+            encoded = encode(i)
             decoded = decode(encoded)
-            self.assertEqual(x, decoded)
+            self.assertEqual(i, decoded)
     
 if __name__ == "__main__":
     unittest.main()
