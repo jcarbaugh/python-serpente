@@ -1,23 +1,23 @@
-__version__ = "0.1.1"
+__version__ = "1.0.0"
 __license__ = "BSD License"
 __author__ = "Jeremy Carbaugh <jeremy@200ok.net>"
 
 import unittest
 
 ROMAN_NUMERALS = (
-    (u"M", 1000),
-    (u"CM", 900),
-    (u"D", 500),
-    (u"CD", 400),
-    (u"C", 100),
-    (u"XC", 90),
-    (u"L", 50),
-    (u"XL", 40),
-    (u"X", 10),
-    (u"IX", 9),
-    (u"V", 5),
-    (u"IV", 4),
-    (u"I", 1),
+    ("M", 1000),
+    ("CM", 900),
+    ("D", 500),
+    ("CD", 400),
+    ("C", 100),
+    ("XC", 90),
+    ("L", 50),
+    ("XL", 40),
+    ("X", 10),
+    ("IX", 9),
+    ("V", 5),
+    ("IV", 4),
+    ("I", 1),
 )
 
 def encode(n):
@@ -26,8 +26,8 @@ def encode(n):
     n: a positive, non-zero integer
     """
     if n <= 0:
-        raise ValueError, "value must be a non-zero, positive integer"
-    encoded = u""
+        raise ValueError("value must be a non-zero, positive integer")
+    encoded = ""
     for symbol, value in ROMAN_NUMERALS:
         while n >= value:
             encoded += symbol
@@ -53,33 +53,33 @@ class TestCaseConversions(unittest.TestCase):
         """
         Test decoding of roman numerals to integers.
         """
-        self.assertEqual(decode(u"I"), 1)
-        self.assertEqual(decode(u"II"), 2)
-        self.assertEqual(decode(u"IV"), 4)
-        self.assertEqual(decode(u"V"), 5)
-        self.assertEqual(decode(u"VI"), 6)
-        self.assertEqual(decode(u"VIII"), 8)
-        self.assertEqual(decode(u"IX"), 9)
-        self.assertEqual(decode(u"X"), 10)
-        self.assertEqual(decode(u"XI"), 11)
-        self.assertEqual(decode(u"XXXII"), 32)
-        self.assertEqual(decode(u"XLV"), 45)
+        self.assertEqual(decode("I"), 1)
+        self.assertEqual(decode("II"), 2)
+        self.assertEqual(decode("IV"), 4)
+        self.assertEqual(decode("V"), 5)
+        self.assertEqual(decode("VI"), 6)
+        self.assertEqual(decode("VIII"), 8)
+        self.assertEqual(decode("IX"), 9)
+        self.assertEqual(decode("X"), 10)
+        self.assertEqual(decode("XI"), 11)
+        self.assertEqual(decode("XXXII"), 32)
+        self.assertEqual(decode("XLV"), 45)
         
     def testencode(self):
         """
         Test encoding of integers of roman numerals.
         """
-        self.assertEqual(encode(1), u"I")
-        self.assertEqual(encode(2), u"II")
-        self.assertEqual(encode(4), u"IV")
-        self.assertEqual(encode(5), u"V")
-        self.assertEqual(encode(6), u"VI")
-        self.assertEqual(encode(8), u"VIII")
-        self.assertEqual(encode(9), u"IX")
-        self.assertEqual(encode(10), u"X")
-        self.assertEqual(encode(11), u"XI")
-        self.assertEqual(encode(32), u"XXXII")
-        self.assertEqual(encode(45), u"XLV")
+        self.assertEqual(encode(1), "I")
+        self.assertEqual(encode(2), "II")
+        self.assertEqual(encode(4), "IV")
+        self.assertEqual(encode(5), "V")
+        self.assertEqual(encode(6), "VI")
+        self.assertEqual(encode(8), "VIII")
+        self.assertEqual(encode(9), "IX")
+        self.assertEqual(encode(10), "X")
+        self.assertEqual(encode(11), "XI")
+        self.assertEqual(encode(32), "XXXII")
+        self.assertEqual(encode(45), "XLV")
         
     def testrandom(self):
         """
