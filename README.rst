@@ -4,13 +4,6 @@ python-serpente
 
 Roman numeral conversion module.
 
-
-Installation
-============
-
-    ``python setup.py install``
-
-
 Usage
 =====
 
