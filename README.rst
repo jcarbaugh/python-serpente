@@ -4,6 +4,9 @@ python-serpente
 
 Roman numeral conversion module.
 
+.. image:: http://img.shields.io/travis-ci/jcarbaugh/python-serpente.png
+   :target: https://travis-ci.org/jcarbaugh/python-serpente
+
 Usage
 =====
 
