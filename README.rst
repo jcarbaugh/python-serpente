@@ -2,10 +2,9 @@
 python-serpente
 ===============
 
-Roman numeral conversion.
+Roman numeral conversion. Supports Python 3.6, 3.7, 3.8, and PyPy3.6.
 
-.. image:: http://img.shields.io/travis-ci/jcarbaugh/python-serpente.png
-   :target: https://travis-ci.org/jcarbaugh/python-serpente
+.. image:: https://github.com/jcarbaugh/python-serpente/workflows/Python%20package/badge.svg
 
 Usage
 =====
