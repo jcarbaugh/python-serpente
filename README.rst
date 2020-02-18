@@ -2,7 +2,7 @@
 python-serpente
 ===============
 
-Roman numeral conversion module.
+Roman numeral conversion.
 
 .. image:: http://img.shields.io/travis-ci/jcarbaugh/python-serpente.png
    :target: https://travis-ci.org/jcarbaugh/python-serpente
