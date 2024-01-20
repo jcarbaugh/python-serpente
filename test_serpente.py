@@ -37,7 +37,7 @@ def test_encode():
 
 def test_random():
     """
-    Test encoding and decoding of random integers to roman numerals.
+    Test encoding and decoding of integers from 1 to 3000.
     """
     for i in range(1, 3000):
         encoded = encode(i)

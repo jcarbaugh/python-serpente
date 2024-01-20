@@ -9,7 +9,7 @@ Roman numeral conversion. Supports Python 3.8 to 3.12.
 ``` python
 >>> import serpente
 >>> serpente.encode(1234)
-u'MCCXXXIV'
->>> serpente.decode(u'MCCXXXIV')
+'MCCXXXIV'
+>>> serpente.decode("MCCXXXIV")
 1234
 ```
