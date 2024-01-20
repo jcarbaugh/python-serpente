@@ -2,13 +2,15 @@
 name = "python-serpente"
 version = "2.0"
 description = "Roman numeral encoder and decoder"
-authors = ["Jeremy Carbaugh"]
-license = "BSD License"
+authors = [
+    "Jeremy Carbaugh <jeremy@jcarbaugh.com>",
+]
+license = "MIT"
 readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: BSD License",
+    "License :: OSI Approved :: MIT",
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
