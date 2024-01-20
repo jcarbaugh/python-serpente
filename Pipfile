@@ -8,5 +8,6 @@ black = "*"
 importlib-metadata = "*"
 pytest = "*"
 pylint = "*"
+exceptiongroup = "*"
 
 [packages]
