@@ -44,4 +44,4 @@ def decode(r):
     return decoded
 
 
-__all__ = ["decode", "encode", "ROMAN_NUMERALS"]
+__all__ = ["decode", "encode"]
