@@ -15,7 +15,7 @@ ROMAN_NUMERALS = (
 )
 
 
-def encode(n):
+def encode(n: int) -> str:
     """
     Convert an integer to a string represetation of a roman numeral.
     n: a positive, non-zero integer
@@ -30,12 +30,13 @@ def encode(n):
     return encoded
 
 
-def decode(r):
+def decode(r: str) -> int:
     """
     Convert a string representation of a roman numeral to an integer.
     r: a string representation of a roman numeral
     """
-    decoded, index = 0, 0
+    decoded = 0
+    index = 0
     for symbol, value in ROMAN_NUMERALS:
         symlen = len(symbol)
         while r[index : index + symlen] == symbol:
