@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "python-serpente"
+version = "2.0"
+description = "Roman numeral encoder and decoder"
+authors = ["Jeremy Carbaugh"]
+license = "BSD License"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+]
+packages = [{include = "serpente.py"}]
+
+[tool.poetry.urls]
+Repository = "http://github.com/jcarbaugh/python-serpente/"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.4"
+exceptiongroup = "^1.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
